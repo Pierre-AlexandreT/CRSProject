@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_seance_list_fragment">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.pat.crsproject.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_seance_list_fragment"
+        android:name="com.pat.crsproject.ui.fragment.SeanceListFragment"
+        android:label="@string/title_fragment_list_seance"
+        tools:layout="@layout/seance_list_fragment" />
 
     <fragment
         android:id="@+id/navigation_dashboard"

@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">CRSProject</string>
-    <string name="title_home">Home</string>
+    <string name="title_fragment_list_seance">Seance List</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+
+
+<!--    List Seance-->
+    <string name="exemple_text_title_seance">Exemple Seance</string>
+
 </resources>
