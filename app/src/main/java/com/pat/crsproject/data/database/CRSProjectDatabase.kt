@@ -3,6 +3,7 @@ package com.pat.crsproject.data.database
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import com.pat.crsproject.data.database.dao.PhotoDao
+import com.pat.crsproject.data.database.dao.SeanceDao
 import com.pat.crsproject.data.model.*
 
 @Database(
@@ -21,4 +22,5 @@ import com.pat.crsproject.data.model.*
 abstract class CRSProjectDatabase : RoomDatabase() {
 
     abstract val photoDao: PhotoDao
+    abstract val seanceDao: SeanceDao
 }
