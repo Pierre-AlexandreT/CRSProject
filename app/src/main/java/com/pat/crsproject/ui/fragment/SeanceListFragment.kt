@@ -9,13 +9,14 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.pat.crsproject.R
+import com.pat.crsproject.data.database.DatabaseManager
 import com.pat.crsproject.data.model.Seance
 import com.pat.crsproject.ui.adapter.SeanceAdapter
 import kotlinx.android.synthetic.main.seance_list_fragment.view.*
 
 class SeanceListFragment : Fragment() {
 
-    private var myListe : ArrayList<Seance> = ArrayList()
+    private lateinit var myListe : List<Seance>
 
 
     private lateinit var seanceAdapter : SeanceAdapter
@@ -24,10 +25,8 @@ class SeanceListFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activity?.run {
-            myListe.add(Seance(1,"Mariage","","",""))
-            myListe.add(Seance(1,"Fete d'anniversaire","","",""))
-            myListe.add(Seance(1,"Incroyable voyage","","",""))
 
+            myListe= listOf()
 
         } ?: throw IllegalStateException("Invalid Activity")
 
